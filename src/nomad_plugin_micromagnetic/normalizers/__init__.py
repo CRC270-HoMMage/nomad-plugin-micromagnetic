@@ -1,17 +1,23 @@
 from nomad.config.models.plugins import NormalizerEntryPoint
-from pydantic import Field
 
 
-class NewNormalizerEntryPoint(NormalizerEntryPoint):
-    parameter: int = Field(0, description='Custom configuration parameter')
+class MicromagneticNormalizerEntryPoint(NormalizerEntryPoint):
+    """
+    Entry point for the micromagnetic normalizer.
+
+    No configurable parameters for now; add Pydantic fields here if you ever
+    want to make its behavior configurable.
+    """
 
     def load(self):
-        from nomad_plugin_micromagnetic.normalizers.normalizer import NewNormalizer
+        from micromagnetic_test_plugin.normalizers.normalizer import (
+            MicromagneticNormalizer,
+        )
 
-        return NewNormalizer(**self.model_dump())
+        return MicromagneticNormalizer(**self.model_dump())
 
 
-normalizer_entry_point = NewNormalizerEntryPoint(
-    name='NewNormalizer',
-    description='New normalizer entry point configuration.',
+normalizer_entry_point = MicromagneticNormalizerEntryPoint(
+    name='MicromagneticNormalizer',
+    description='Compute derived quantities for micromagnetic simulations (e.g. Mz slices).',
 )
