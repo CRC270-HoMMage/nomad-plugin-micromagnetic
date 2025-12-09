@@ -1,0 +1,29 @@
+{
+  "template": "https://github.com/FAIRmat-NFDI/cookiecutter-nomad-plugin",
+  "commit": "7bfd556fe5c57f6ad5666fe65eed2cf3672f5719",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "full_name": "Ross Knapman",
+      "email": "ross.knapman@uni-due.de",
+      "github_username": "CRC270-HoMMage",
+      "plugin_name": "nomad-plugin-micromagnetic",
+      "module_name": "nomad_plugin_micromagnetic",
+      "short_description": "A simple plugin to demonstrate the NOMAD plugin system with micromagnetic data.",
+      "version": "0.1.0",
+      "license": "MIT",
+      "include_schema_package": true,
+      "include_normalizer": true,
+      "include_parser": true,
+      "include_app": false,
+      "include_example_uploads": false,
+      "include_action": false,
+      "_copy_without_render": [
+        "*.html"
+      ],
+      "_template": "https://github.com/FAIRmat-NFDI/cookiecutter-nomad-plugin",
+      "_commit": "7bfd556fe5c57f6ad5666fe65eed2cf3672f5719"
+    }
+  },
+  "directory": null
+}
