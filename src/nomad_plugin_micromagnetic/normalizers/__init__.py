@@ -10,7 +10,7 @@ class MicromagneticNormalizerEntryPoint(NormalizerEntryPoint):
     """
 
     def load(self):
-        from micromagnetic_test_plugin.normalizers.normalizer import (
+        from nomad_plugin_micromagnetic.normalizers.normalizer import (
             MicromagneticNormalizer,
         )
 

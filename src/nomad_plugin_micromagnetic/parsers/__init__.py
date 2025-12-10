@@ -8,7 +8,7 @@ class MumaxOVFParserEntryPoint(ParserEntryPoint):
 
     def load(self):
         # Import here to avoid circular imports
-        from micromagnetic_test_plugin.parsers.parser import MumaxOVFParser
+        from nomad_plugin_micromagnetic.parsers.parser import MumaxOVFParser
 
         # You can pass configuration options via **self.model_dump() if you add
         # custom fields to this entry point. For now, we don't need any.

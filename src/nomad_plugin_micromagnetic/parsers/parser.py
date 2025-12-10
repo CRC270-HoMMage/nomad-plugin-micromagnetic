@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING
 import numpy as np
 from nomad.parsing.parser import MatchingParser
 
-from micromagnetic_test_plugin.schema_packages.schema_package import (
+from nomad_plugin_micromagnetic.schema_packages.schema_package import (
     MicromagneticField,
     MicromagneticGeometry,
     MicromagneticSimulation,
